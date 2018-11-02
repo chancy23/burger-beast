@@ -1,0 +1,46 @@
+<div class="container col-sm-8">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>The Burger Beast</h2>
+            <img src="/assets/images/burger-vector.jpg" class="mx-auto d-block" alt="burger">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        {{!-- left column for undevoured burgers --}}
+        <div class="col-sm-4" id="allBurgers">
+            <h3>Burgers to Eat</h3>
+            {{!-- show each burger id and name from our DB with a devoured of false--}}
+            {{#each burgers}}
+                {{#unless devoured}}
+                    {{>burgers/burgers-block devoured=false}}
+                {{/unless}}
+            {{/each}}
+        </div>
+         {{!-- right column for devoured burgers (devoured is true) --}}
+        <div class="col-sm-4" id="devouredBurgers">
+            <h3>Devoured Burgers</h3>
+            {{#each burgers}}
+                {{#if devoured}}
+                    {{>burgers/burgers-block devoured=true}}
+                {{/if}}
+            {{/each}}
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <hr>
+            {{!-- to add a burger --}}
+
+            <form class="form-inline center">
+                <label class="sr-only" for="inlineFormInputName2"></label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="newBurger" placeholder="Add a Burger">
+                <button type="submit" class="btn btn-primary mb-2" id="addBurger">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+</div>

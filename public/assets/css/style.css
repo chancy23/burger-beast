@@ -1,0 +1,26 @@
+body{
+    background-color: #223c56;
+    background-image: url("/assets/images/food_bgi.jpg");
+}
+
+.container {
+    background-color: white;
+    margin-top: 20px;
+}
+h2,
+h3 { 
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 200px;
+    height: auto
+}
+
+.form-inline .form-control {
+    width: 80%;
+}
