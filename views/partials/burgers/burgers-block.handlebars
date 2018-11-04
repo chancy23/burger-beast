@@ -2,8 +2,8 @@
 {{#if devoured}}<p>{{this.id}}: {{this.burger_name}}</p>
 
 {{!-- display all burgers on left if devoured is false --}}
-{{else}}<p>{{this.id}}: {{this.burger_name}}<br>
-<button type="submit" class="btn btn-primary eatBurger" data-id="{{this.id}}">Devoured!</button></p>
+{{else}}<p>{{this.id}}: {{this.burger_name}}
+<button type="submit" class="btn btn-primary btn-sm eatBurger" data-id="{{this.id}}"><i class="fa fa-check" style="font-size:20px"></i></button></p>
 {{/if}}
 
 

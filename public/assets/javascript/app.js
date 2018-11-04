@@ -14,6 +14,8 @@ $(function(){
             // reload the page to display the burger added
             location.reload();
         });
+
+        //clear input field
     });
 
     //on click for updating a burger to devoured (put)
