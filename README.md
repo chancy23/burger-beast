@@ -3,7 +3,7 @@
 ##Overview
 This application allows users to enter and track what burgers they want to eat and/or have eaten. 
 
-It has a simple user interface with the burgers that the user wants to devour on the left, and what burgers they have devoured on the right. At the bottom of the screen there is an input section to add more burders to Eat Da Burger.
+It has a simple user interface with the burgers that the user wants to devour on the left, and what burgers they have devoured on the right. At the bottom of the screen there is an input section to add more burgers to Eat Da Burger.
 
 The burger information is stored in a MySQL database.
 
