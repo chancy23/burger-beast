@@ -1,25 +1,29 @@
-$(function(){
+$(function() {
     //on click for adding a burger (post)
-    $("#addBurger").on("click", function(event){
+    $("#addBurger").on("click", function(event) {
         event.preventDefault();
         //create a variable to hold the new burger as a value to the burger_name key
         var newBurger = {
-            burger_name: $("#newBurger").val().trim() //.toCapitalCase();
+            burger_name: $("#newBurger").val().trim()
         };
-        console.log("new burger: " + JSON.stringify(newBurger), null, 2);
         
         //use post to send to database
         $.post("/api/burgers", newBurger, function(){
-            //console.log("New Burger Added!");
+            
             // reload the page to display the burger added
             location.reload();
         });
 
         //clear input field
+        $("#newBurger").val("");
+
+        //testing 
+        //console.log("New Burger Added!");
+        // console.log("new burger: " + JSON.stringify(newBurger), null, 2);
     });
 
     //on click for updating a burger to devoured (put)
-    $(".eatBurger").on("click", function(event){
+    $(".eatBurger").on("click", function(event) {
         event.preventDefault();
         //create variables for the id of the burger of the button clicked
         var id = $(this).data("id");
@@ -39,5 +43,4 @@ $(function(){
             location.reload();
         }); 
     });
-
 });

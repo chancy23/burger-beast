@@ -45,6 +45,11 @@ h3 {
     width: 80%;
 }
 
+#allBurgers,
+#devouredBurgers {
+    text-transform: capitalize
+}
+
 /* adjust for viewing better on small screens*/
 @media (max-width: 1024px) {
     .main {

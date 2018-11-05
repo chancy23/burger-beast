@@ -35,21 +35,12 @@ router.put("/api/burgers/:id", function(req, res){
 //post method to add burger to the db
 router.post("/api/burgers", function(req, res){
     //call the method and pass in the col name, and the new value for that col
-    console.log("req", req.body.burger_name);
-    //req.body.burger_name returns the value that was input
-    //req.body is the full key/value object pair
-
-    //shouldn't i have the column name in here first? however when I do, it stops the function and gives an error saying the value is not a colmn
     burger.insertOne("burger_name", req.body.burger_name, function(result){
-       
-        console.log("router post method called");
-        console.log('the result: ' + result);
          //send back the id of the new burger as confirmation it was added
         res.json({id: result.insertId});
-        //console.log({id: result.insertId});
+        console.log({id: result.insertId});
     });
 });
-
 
 // export to server file
 module.exports = router;
