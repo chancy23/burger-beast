@@ -1,4 +1,4 @@
-# burger-beast
+#Eat Da Burger App
 
 ##Overview
 This application allows users to enter and track what burgers they want to eat and/or have eaten. 
@@ -14,10 +14,13 @@ The burger information is stored in a MySQL database.
  * Node.js and Express
  * MySQL (database)
  * GitHub (Project Repository)
- * Heroku (Deployement)
+ * Heroku (Deployment)
 
  ##Architecture
  The app was built using an MVC (Model View Controller) web architecture and ORM (Object Relational Mapping) to convert our data between SQL and JavaScript.
 
- ##Support
- If you have questions or issues with the app, please contact chancyleath@hotmail.com.
+Deployed at: https://burger-beast110518.herokuapp.com/
+
+Video Demo: https://drive.google.com/open?id=1rjMcxB5qdlQUWOeW226gMnwaVDlfYYJq
+
+If you have questions or issues with the app, please contact chancyleath@hotmail.com.
