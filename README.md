@@ -21,6 +21,6 @@ The burger information is stored in a MySQL database.
 
 Deployed at: https://burger-beast110518.herokuapp.com/
 
-Video Demo: https://drive.google.com/open?id=1rjMcxB5qdlQUWOeW226gMnwaVDlfYYJq
+Video Demo: https://drive.google.com/file/d/1rjMcxB5qdlQUWOeW226gMnwaVDlfYYJq/view?usp=sharing
 
 If you have questions or issues with the app, please contact chancyleath@hotmail.com.
